@@ -8,18 +8,19 @@ def menu():
     print("2.imprimir datos")
     print("3.Generar PDF")
     print("4.General QR")
+    print("5.lista productos")
     print("0.salir")
     opcion = int(input("Elige una opcion"))
     if(opcion==1):
-        pedirDatos
+        pedirDatos()
     elif (opcion==2):
         imprimirDatos()
     elif (opcion==3):
-        generarPDF()
+        generarPDF(ListaNombre,listaEdades)
 
 def pedirDatos():
-    ListaNombre.append(input("ingresa un nombre"))
-    ListaNombre.append(input("ingresa un nombre"))
+    ListaNombre.append(input("ingresa un nombre "))
+    listaEdades.append(input("ingresa una edad "))
     print("guardado")
 
 def imprimirDatos():
@@ -27,4 +28,5 @@ def imprimirDatos():
         print(f"nombre: {ListaNombre[i]} Edad: {listaEdades[i]}")
 
 
-
+  
+ 
